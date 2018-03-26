@@ -23,7 +23,7 @@ matrix:
     before_install:
       - sudo apt-get -qq update
       - sudo apt-get -y install python3-pip
-      - pip3 install --only-binary :all: --user -r ./src/test/resources/weighted-minhash/requirements.txt
+      - pip3 install --only-binary ":all:" --user -r ./src/test/resources/weighted-minhash/requirements.txt
     before_script:
       - ./src/test/resources/weighted-minhash/weighted_minhash_test.py
     script:
